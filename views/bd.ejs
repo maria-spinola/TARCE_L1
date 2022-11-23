@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Base de Datos</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-	BASE DE DATOS
+    <h2> Database Results </h2>
+    <ul>
+      <% results.forEach(function(r) { %>
+        <li><%= r.id %> - <%= r.name %></li>
+      <% }); %>
+    </ul>
+    </div>
   </body>
 </html>
+
+// <li><%= r.id %> - <a href="<%= r.url %>"><%= r.nombrenube %></a> </li>
